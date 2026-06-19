@@ -165,7 +165,7 @@
                 <!-- DEBUGGING -->
                 <article class="border border-charcoal/70 p-7 min-h-[8rem] flex flex-col">
                     <h3 class="font-wide uppercase text-charcoal text-xl sm:text-2xl leading-none">Debugging</h3>
-                    <p class="mt-4 text-[0.7rem] text-charcoal/75 leading-relaxed">A built-in test harness and debug apis help you ship with greater stability.</p>
+                    <p class="mt-4 text-[0.7rem] text-charcoal/75 leading-relaxed">A built-in test harness and debug apis help you ship with confidence.</p>
                 </article>
             </div>
         </div>
@@ -358,7 +358,7 @@
                 const t = clock.getElapsedTime();
                 const dt = t - lastT; lastT = t;
                 if (mixer) mixer.update(dt);                 // advances gear clip; clamps at end then holds
-                jet.rotation.z = t * 0.6;                   // continuous aileron roll about nose-tail axis
+                jet.rotation.z = t * 0.3;                   // continuous aileron roll about nose-tail axis
                 pivot.position.y = Math.sin(t * 0.7) * 0.1; // gentle bob
 
                 renderer.setRenderTarget(rt);
