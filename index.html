@@ -88,8 +88,8 @@
             })
             document.querySelectorAll('.select-os').forEach(e => {
                 const active = e.getAttribute('data-os') === os
-                e.classList.toggle('text-white', active)
-                e.classList.toggle('text-white/50', !active)
+                e.classList.toggle('text-charcoal', active)
+                e.classList.toggle('text-charcoal/50', !active)
             })
         }
 
@@ -124,11 +124,11 @@
             </p>
 
             <!-- install -->
-            <div class="mt-9 w-fit max-w-full rounded-lg border border-white/55 px-4 py-2 text-xs sm:text-base overflow-x-auto whitespace-nowrap">
-                <button class="select-os cursor-pointer mr-1 text-white/50 hover:text-white transition-colors select-none" data-os="unix" title="macOS &amp; Linux" aria-label="macOS and Linux install command">$</button>
-                <button class="select-os cursor-pointer mr-2 text-white/50 hover:text-white transition-colors select-none" data-os="windows" title="Windows" aria-label="Windows install command">&gt;</button>
-                <span class="install-cmd text-white select-all" data-os="unix">curl -fsSL https://jumpjet.dev/install.sh | bash</span>
-                <span class="install-cmd text-white select-all" data-os="windows">iex (iwr -Uri "https://jumpjet.dev/install.ps1" -UseBasicParsing)</span>
+            <div class="mt-9 w-fit max-w-full rounded-lg bg-white px-4 py-2 text-xs sm:text-base overflow-x-auto whitespace-nowrap">
+                <button class="select-os cursor-pointer mr-1 text-charcoal/50 hover:text-charcoal transition-colors select-none" data-os="unix" title="macOS &amp; Linux" aria-label="macOS and Linux install command">$</button>
+                <button class="select-os cursor-pointer mr-2 text-charcoal/50 hover:text-charcoal transition-colors select-none" data-os="windows" title="Windows" aria-label="Windows install command">&gt;</button>
+                <span class="install-cmd text-charcoal select-all" data-os="unix">curl -fsSL https://jumpjet.dev/install.sh | bash</span>
+                <span class="install-cmd text-charcoal select-all" data-os="windows">iex (iwr -Uri "https://jumpjet.dev/install.ps1" -UseBasicParsing)</span>
             </div>
 
             <!-- cta -->
